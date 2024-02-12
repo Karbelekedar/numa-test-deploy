@@ -19,7 +19,7 @@ def home():
             <title>Home Page</title>
         </head>
         <body>
-            <h1>Welcome to our website!</h1>
+            <h1>Welcome to Numa Health</h1>
         </body>
     </html>
     """
