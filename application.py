@@ -11,6 +11,19 @@ CORS(application)
 application.config["MONGO_URI"] = "mongodb+srv://echo:PjRboQ0F7xcMvPMI@cluster0.7ij7o2z.mongodb.net/Echo?retryWrites=true&w=majority"
 mongo = PyMongo(application)
 
+@application.route('/')
+def home():
+    return """
+    <html>
+        <head>
+            <title>Home Page</title>
+        </head>
+        <body>
+            <h1>Welcome to our website!</h1>
+        </body>
+    </html>
+    """
+
 @application.route('/register', methods=['POST'])
 def register():
     data = request.json
